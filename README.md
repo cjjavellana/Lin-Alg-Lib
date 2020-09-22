@@ -19,3 +19,5 @@ Do note that you may need to update the `Makefile` and tasks.json
 3. Reduce code duplication in vectors.cpp with the use of lambda.
 
 4. Unit Test. Stop testing using the main function.
+
+5. Add support for complex numbers.

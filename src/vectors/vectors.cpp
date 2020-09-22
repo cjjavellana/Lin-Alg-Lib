@@ -1,8 +1,9 @@
 #include <cstdlib>
 #include <chrono>
 #include <random>
+#include <type_traits>
 
-
+#include "../common/complex.h"
 #include "vectors.h"
 
 using namespace std;
@@ -136,6 +137,10 @@ Vector<T>* Vector<T>::randn(int n, double std_deviation) {
 
     T *elements  = new T[n];
     
+    if (std::is_same<T, mm::common::ComplexNumber>::value) {
+        cout << "T is a double";
+    }
+
     CHECK_NOT_NULL(elements);
     
     for(int i = 0; i < n; i++) {

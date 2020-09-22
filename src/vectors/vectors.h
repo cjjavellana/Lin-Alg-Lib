@@ -65,6 +65,8 @@ public:
     // a new vector instead
     Vector<T>* dot(const Vector<T> *other);
 
+    
+
     // Sets a value at the specified location
     // 
     // Note: This mutates the vector

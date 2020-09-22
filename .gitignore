@@ -1,3 +1,4 @@
 *.dSYM
 src/matrix
+.DS_Store
 *.o
